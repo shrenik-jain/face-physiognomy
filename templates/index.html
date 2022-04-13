@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Face Physiognomy</title>
+    <meta content="A Face Emotion Recognizer - Real Time and Image Based" name="description">
+    <meta content="" name="keywords">
+    <meta content="Shrenik Jain, Shreyash Rajurkar, Hrutika Chavan" name="author">
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename='/style.css') }}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <h1><u>FACE PHYSIOGNOMY</u></h1>
+            <br>
+            <br>
+            <h3>How do you want us to know your mood? 😉</h3>
+        </div>
+
+        <form action="{{ url_for('after') }}", method="POST", enctype="multipart/form-data" >
+            <input type="file", name="image">
+            <input class="btn-group" type="submit" name="btn">
+            <!-- <div class="btn-group">
+                <button onClick="window.location.href='after';"> Upload a Photo </button> 
+            </div> -->
+        </form>
+        <br>
+        <br>
+        <br>
+        <div class="btn-group">
+            <button onClick="window.location.href='video_feed';">Open Web Camera</button>
+        </div>
+
+        <!-- <script type="text/javascript" src="{{ url_for('static', filename='/main.js') }}"></script> -->
+    </body>
+
+</html>

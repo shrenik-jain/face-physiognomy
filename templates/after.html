@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Face Physiognomy</title>
+
+        <meta content="A Face Emotion Recognizer - Real Time and Image Based" name="description">
+        <meta content="" name="keywords">
+        <meta content="Shrenik Jain, Shreyash Rajurkar, Hrutika Chavan" name="author">
+        
+        <!-- Favicons -->
+        <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+        <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        
+        <!-- Template Main CSS File -->
+        <link href="{{ url_for('static', filename='/style.css') }}" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div>
+            <h1><u>FACE PHYSIOGNOMY</u></h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <img class="center" src="{{url_for('static', filename='image_with_bb.jpg')}}" alt="image">
+        <br>
+        <h2>The Person in the Image looks {{data}}</h2>
+
+    </body>
+
+</html>
