@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
         
         <!-- Template Main CSS File -->
-        <link href="{{ url_for('static', filename='/style.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='/assets/css/style.css') }}" rel="stylesheet">
     </head>
 
     <body>
@@ -29,7 +29,7 @@
         <br>
         <br>
         <br>
-        <img class="center" src="{{url_for('static', filename='image_with_bb.jpg')}}" alt="image">
+        <img class="center" src="{{url_for('static', filename='created_images/image_with_bb.jpg')}}" alt="image">
         <br>
         <h2>The Person in the Image looks {{data}}</h2>
 

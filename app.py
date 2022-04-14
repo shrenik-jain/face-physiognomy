@@ -1,5 +1,3 @@
-from crypt import methods
-# from urllib import request
 from flask import Flask, Response, render_template, request
 
 from utils.camera import FileUpload, VideoCamera
@@ -23,13 +21,13 @@ def video_feed():
     return Response(gen(VideoCamera()),
                     mimetype = 'multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/after', methods=['GET', 'POST'])
-def after():
+@app.route('/image_upload', methods=['GET', 'POST'])
+def image_upload():
     image = request.files['image']
-    image.save('static/image.jpg')
+    image.save('static/created_images/image.jpg')
     f = FileUpload()
     pred = f.get_roi()
-    return render_template('after.html', data=pred)
+    return render_template('image_upload.html', data=pred)
 
 
 if __name__ == '__main__':

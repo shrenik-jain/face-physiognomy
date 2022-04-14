@@ -1,0 +1,66 @@
+.tm-video-container {
+    position: relative;
+    max-width: 1280px;
+    max-height: 640px;
+    overflow-y: hidden;
+}
+
+.tm-video-text {
+    display: inline-block;
+}
+
+.tm-welcome-video {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-color: black;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.tm-video-text-overlay {
+    position: absolute;
+    left: 60%;
+    bottom: 30px;
+}
+.tm-video-text-overlay h1 {
+	font-size: 3.4rem;
+}
+.tm-welcome-text {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    font-size: 2.2rem;
+}
+
+form {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+label{
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 9px 19px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+label:hover {
+    background-color: #fff;
+    color: #5fb759;
+  }
+
+input[type="file"] {
+    display: none;
+}

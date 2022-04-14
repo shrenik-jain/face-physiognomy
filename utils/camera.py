@@ -42,7 +42,7 @@ class VideoCamera(object):
 class FileUpload(object):
 
     def __init__(self):
-        self.image = cv2.imread('static/image.jpg')
+        self.image = cv2.imread('static/created_images/image.jpg')
 
     def get_roi(self):
         '''
@@ -59,9 +59,8 @@ class FileUpload(object):
         roi = cv2.resize(fc, (48, 48))
         pred = model.predict_emotion(roi[np.newaxis, :, :, np.newaxis])
         
-        cv2.imwrite('static/image_with_bb.jpg', self.image)
-        cv2.imwrite('static/gray_image.jpg', gray_image)
-        cv2.imwrite('static/roi.jpg', roi)
+        cv2.imwrite('static/created_images/image_with_bb.jpg', self.image)
+        cv2.imwrite('static/created_images/gray_image.jpg', gray_image)
+        cv2.imwrite('static/created_images/roi.jpg', roi)
 
         return pred
-
