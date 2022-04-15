@@ -7,17 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
 
     <title>Face Physiognomy</title>
 
-    <!--
-
-Breezed Template
-
-https://templatemo.com/tm-543-breezed
-
--->
     <!-- Additional CSS Files -->
 
     <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}">
@@ -54,7 +48,7 @@ https://templatemo.com/tm-543-breezed
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="#" class="logo">
                             Decide
                         </a>
                         <!-- ***** Logo End ***** -->
@@ -114,7 +108,8 @@ https://templatemo.com/tm-543-breezed
                         <h5>Make A Choice</h5>
                         <a onClick="window.location.href='video_feed';" class="main-stroked-button">Web Camera</a>
 
-                        <form class="" action="{{ url_for('image_upload') }}" , method="POST" , enctype="multipart/form-data">
+                        <form class="" action="{{ url_for('image_upload') }}" , method="POST" ,
+                            enctype="multipart/form-data">
                             <label> Upload Image
                                 <input type="file" , onchange="this.form.submit()" name="image" />
                             </label>
@@ -574,7 +569,7 @@ https://templatemo.com/tm-543-breezed
             <div class="row">
                 <div class="col-lg-6 col-xs-12">
                     <div class="left-text-content">
-                        <p>Thank You</p>
+                        <p style="font-size: 2.5rem; font-weight: 650;">Thank You</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xs-12">

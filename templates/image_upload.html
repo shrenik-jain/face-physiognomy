@@ -1,38 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Face Physiognomy</title>
 
-        <meta content="A Face Emotion Recognizer - Real Time and Image Based" name="description">
-        <meta content="" name="keywords">
-        <meta content="Shrenik Jain, Shreyash Rajurkar, Hrutika Chavan" name="author">
-        
-        <!-- Favicons -->
-        <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-        <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-        
-        <!-- Template Main CSS File -->
-        <link href="{{ url_for('static', filename='/assets/css/style.css') }}" rel="stylesheet">
-    </head>
+<head>
 
-    <body>
-        
-        <div>
-            <h1><u>FACE PHYSIOGNOMY</u></h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Face Physiognomy</title>
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/font-awesome.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/templatemo-breezed.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl-carousel.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/lightbox.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css') }}">
+
+    <!-- Icons -->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/css/style.css') }}">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='/assets/css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <br>
-        <br>
-        <br>
-        <img class="center" src="{{url_for('static', filename='created_images/image_with_bb.jpg')}}" alt="image">
-        <br>
-        <h2>The Person in the Image looks {{data}}</h2>
+    </div>
+    <!-- ***** Preloader End ***** -->
 
-    </body>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a style="color: black;" href="#" class="logo">
+                            Decide
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+
+    <!-- ***** Image Display Area Start ***** -->
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <img class="center" src="{{url_for('static', filename='created_images/image_with_bb.jpg')}}"
+                    alt="image">
+            </div>
+
+            <div>
+                <h2 class="pred_text">The Person in the Image looks <i>{{data}}</i></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Image Display Area End ***** -->
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="left-text-content">
+                        <p style="font-size: 2.5rem; font-weight: 650;">Thank You</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                        <ul class="social-icons">
+                            <li><a rel="nofollow" href="#"><i class="fa fa-home"></i></a>
+                            </li>
+                            <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/jquery-2.1.0.min.js') }}"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/bootstrap.min.js') }}"></script>
+
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/owl-carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/scrollreveal.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/waypoints.min.js') }}"></script>
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='/assets/js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/imgfix.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/lightbox.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/isotope.js') }}"></script>
+
+    <!-- Global Init -->
+    <script type="text/javascript" src="{{ url_for('static', filename='/assets/js/custom.js') }}"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
 
 </html>
