@@ -1336,7 +1336,8 @@ footer
 footer {
   padding: 80px 0px;
   background: rgb(51,155,158);
-  background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+  /* background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%); */
+  background-image: linear-gradient(145deg, #1d1160 0%, #33006F 50%,  #452c63 100%);
 }
 
 footer .left-text-content p {
