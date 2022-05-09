@@ -1,9 +1,9 @@
 docker==5.0.3
 Flask==2.0.2
 Jinja2==3.0.3
-keras==2.8.0
-matplotlib==3.5.1
-numpy==1.21.3
+keras==2.6.0
+matplotlib==3.3.4
+numpy==1.19.5
 opencv-python==4.5.5.64
 requests==2.26.0
-tensorflow==2.8.0
+tensorflow
