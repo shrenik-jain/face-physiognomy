@@ -2,7 +2,7 @@ docker==5.0.3
 Flask==2.0.2
 gunicorn==20.1.0
 Jinja2==3.0.3
-keras==2.6.0
+keras
 matplotlib
 numpy
 opencv-python==4.5.5.64
