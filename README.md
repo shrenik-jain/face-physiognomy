@@ -3,6 +3,12 @@
 Try Our Web Application here:  *https://* 
 
 ---
+## Docker Usage:
+
+To use the application via docker
+- ```docker pull shrenikjainn9/face-physiognomy:latest```
+- ```docker run -p 5000:5000 shrenikjainn9/face-physiognomy:latest```
+
 ## References:
 
 - **Templates**
