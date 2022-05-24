@@ -9,7 +9,8 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git "https://github.com/shrenik-jain/face-physiognomy.git"
+                // git "https://github.com/shrenik-jain/face-physiognomy.git"
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/shrenik-jain/face-physiognomy.git'
             }
         }
 
