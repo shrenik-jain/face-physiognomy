@@ -1,0 +1,12 @@
+# Ignore all files in notebooks.
+/notebooks
+
+# Ignore git file
+*/.gitignore
+*/.git
+
+# Ignore miscelleneous files
+*.md
+Dockerfile
+Jenkinsfile
+LICENSE

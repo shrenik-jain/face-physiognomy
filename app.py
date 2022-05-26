@@ -1,7 +1,7 @@
+import os
+
 from flask import Flask, Response, render_template, request
-
 from utils.camera import FileUpload, VideoCamera
-
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
@@ -31,4 +31,5 @@ def image_upload():
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', debug = True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host = '0.0.0.0', port = port, debug = True)

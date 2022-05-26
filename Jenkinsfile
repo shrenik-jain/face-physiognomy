@@ -9,15 +9,15 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git "https://github.com/shrenik-jain/face-physiognomy.git"
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/shrenik-jain/face-physiognomy.git'
             }
         }
 
-        // stage('Docker Build') {
-        //     steps {
-        //         sh "docker build -t ${DOCKERHUB_CREDENTIALS_USR}/face-physiognomy:latest ."
-        //     }
-        // }
+        stage('Docker Build') {
+            steps {
+                sh "docker build -t ${DOCKERHUB_CREDENTIALS_USR}/face-physiognomy:latest ."
+            }
+        }
 
         stage('Docker Login') {
             steps {
