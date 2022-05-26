@@ -1,0 +1,6 @@
+./notebooks
+*.git
+*.md
+Dockerfile
+Jenkinsfile
+LISCENSE
