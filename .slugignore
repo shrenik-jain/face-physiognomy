@@ -1,6 +1,12 @@
+# Ignore all files in notebooks.
 /notebooks
-*.git
+
+# Ignore git file
+*/.gitignore
+*/.git
+
+# Ignore miscelleneous files
 *.md
 Dockerfile
 Jenkinsfile
-LISCENSE
+LICENSE
