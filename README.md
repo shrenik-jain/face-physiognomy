@@ -10,6 +10,7 @@ An AI-Powered technology that analyzes facial expressions from static images as 
 - [Dataset](#dataset)
 - [Quick Start](#quick-start)
 - [Docker Usage](#docker-usage)
+- [Results](#results)
 - [Repository Structure](#repository-structure)
 - [References](#references)
 
@@ -26,11 +27,23 @@ The dataset used to train the model: https://www.kaggle.com/datasets/msambare/fe
 
 <br>
 
-### Docker Usage:
+### Docker Usage
 
 To use the application via docker
 - ```docker pull shrenikjainn9/face-physiognomy:latest```
 - ```docker run -p 5000:5000 shrenikjainn9/face-physiognomy:latest```
+
+<br>
+
+### Results
+Upon running `app.py`, the results are as shown below. (Refer `./static/created_images/`)
+
+<p align="center">
+  <img src="https://github.com/shrenik-jain/face-physiognomy/blob/main/static/assets/images/website.png" width="850px" height="400px"/></p>
+ <br>
+ <br>
+<p align="center">
+  <img src="https://github.com/shrenik-jain/face-physiognomy/blob/main/static/assets/images/upload_image.png" width="640px" height="480px"/></p>
 
 <br>
 
@@ -70,7 +83,7 @@ To use the application via docker
 
 <br>
 
-### References:
+### References
 
 - **Templates**
     - [Bootstrap](https://getbootstrap.com)
