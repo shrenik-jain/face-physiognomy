@@ -5,7 +5,7 @@ from tensorflow.keras.models import model_from_json
 
 class FacialExpressionRecognizer(object):
 
-    EMOTIONS_LIST = ["Angry", "Happy", "Neutral", "Sad", "Surprise"]
+    EMOTIONS_LIST = ["Angry", "Happy", "Neutral", "Sad", "Surprised"]
 
     def __init__(self, model_json_file, model_weights_file):
         with open(model_json_file, "r") as json_file:
