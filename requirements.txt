@@ -8,4 +8,4 @@ numpy
 opencv-python==4.5.5.64
 requests==2.26.0
 tensorflow
-pyOpenSSL==22.1.0
+
