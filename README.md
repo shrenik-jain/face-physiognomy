@@ -9,8 +9,8 @@ An AI-Powered technology that analyzes facial expressions from static images as 
 - [Docker Usage](#docker-usage)
 - [Results](#results)
 - [Repository Structure](#repository-structure)
-- [Contributing] (#contributing)
-- [License] (#license)
+- [Contributing](#contributing)
+- [License](#license)
 - [References](#references)
 
 ---
