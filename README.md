@@ -12,6 +12,7 @@ An AI-Powered technology that analyzes facial expressions from static images as 
 - [Contributing](#contributing)
 - [License](#license)
 - [References](#references)
+- [Contact](#contact)
 
 ---
 ### Dataset
@@ -108,6 +109,10 @@ This project is licensed under the MIT License.
 - **Fonts & Icons**
     - [Google Fonts](https://fonts.google.com/)
     - [Font Awesome](https://fontawesome.com/)
+
+### Contact
+
+If you have any questions, suggestions, or feedback, feel free to reach out to me through [email](mailto:shrenikkjain81@gmail.com) or visit my [website](https://shrenik-jain.github.io/).
 
 <br>
 
